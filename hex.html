@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexadecimal Color</title>
+</head>
+<body>
+    <style>
+        *{
+            box-sizing: content-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #f1f5f8;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            align-content: center;
+            box-shadow: 0px 5px 10px rgba(10, 0, 0, 0.2);
+            background: #fff;
+            height: 10vh;
+        }
+        .nav{
+            margin: 0 auto;
+            font-size: 20px;
+        }
+        h1{
+            margin: auto;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: rgb(145, 116, 213);
+        }
+
+        a:focus{
+            color:rgb(239, 1, 1);
+        }
+        main{
+            height: 80vh;
+            display: grid;
+            place-items: center;
+        }
+        .container {
+            text-align: center;
+        }
+        .container h2 {
+            border-radius: 15px;
+            border: 1px solid rgb(0, 0, 0);
+            padding: 20px;
+            margin: 20px auto;
+            font-size: 50px;
+            background: #000000;
+            color: white;
+        }
+        button{
+            background: transparent;
+            border: 1px solid #000;
+            border-radius: 10px;
+            padding: 10px 15px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        button:hover{
+            background: #000;
+            color: #fff;
+            border: 1px solid #fff;
+        }
+    </style>
+    <nav>
+        <h1>Color Flipper</h1>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Simple</a></li>
+                <li><a href="#">Hex</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+        <h2 class="bg">Background: <span class="color">#f1f5f8</span> </h2>
+        <button id="btn">Change color</button>
+    </div>
+    </main>
+    <script src="hex.js"></script>
+</body>
+</html>
